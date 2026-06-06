@@ -1,0 +1,37 @@
+# Environment
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+ecg-env/
+.venv/
+venv/
+env/
+
+# Generated files — rebuild on server
+indexes/
+uploaded_docs/
+documents.db
+
+# PDFs and data — too large for GitHub
+data/
+*.pdf
+
+# FAISS index files
+*.faiss
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+debug.py

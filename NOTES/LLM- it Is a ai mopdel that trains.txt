@@ -1,0 +1,64 @@
+LLM- it Is a ai mopdel that trains massive amount of text data to understand and generate human like language
+
+see,
+ reads input from text
+then, understands context
+and predict the next word
+ for example:input- the capital of india is 
+             output- NEW DELHI
+the important point is it is nor memorize the things but it understanding the learning patterns
+
+example-gpt-4,LLaMa,
+ challenges- out to date: that means hwen the we give the massive amount of data the data is depend on the  till the date but  when the user using this after 1 month maybe it has new asnwers so this is one of the chalelnges
+    no source- even though we train the model with correct data ,maybe the data from reprsente website or something but the user don't know that this is correct or not they don't have any source to trust it 
+
+
+RAG-retrieval augmented generation
+
+
+it used to connect the llm to external data for to solve the challenges of llm
+
+for example : 20 yrs back when the use r ask which one have highest nmber of moon in the solar system -maybe the user out is jjupiter with 88 moons
+
+but when ask the same question now the answer is Jupiter with 126 moon so.the llm store the maybe Jupiter but rag knows it is Saturn 
+when the user ask the query the rag combined the relevant information with query ans give the  responses
+
+
+embeddings-to convert human lanugaue to the numbers 
+ 
+
+how the all these things are connected  let see
+
+User asks question
+        ↓
+Convert question → Embedding
+        ↓
+Search similar embeddings (documents)
+        ↓
+Retrieve relevant data
+        ↓
+Send to LLM
+        ↓
+LLM generates answer
+
+
+aftyer it converted into embedding it is stored in faiss 
+PDF/Documents
+      ↓
+Text Chunks
+      ↓
+Embeddings Model
+      ↓
+Vectors
+      ↓
+FAISS Vector Store
+      ↓
+User Question
+      ↓
+Question Embedding
+      ↓
+Similarity Search
+      ↓
+Relevant Chunks Retrieved
+      ↓
+LLM Generates Answer

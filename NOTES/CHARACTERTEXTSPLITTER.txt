@@ -1,0 +1,10 @@
+CHARACTERTEXTSPLITTER
+
+it simpli splitting the dataset .splitting or breaking large texts to smaller,
+
+parameters-chunk_size=it divides the sentence into give chunk_size value.that means if the sentence is 10 characters and chunk_size is 5 it will create 2 chunk1 and chunk2 
+
+separator=is used to  separator the text or document using what the character /n . or anything else
+
+to split the  text we use split_text(text=text_variable)
+foor document we use split_document(document loader variable)
